@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/account.css" />
+		<title>Account</title>
+	</head>
+	<body>
+		<div class="modal modal--active">
+			<button class="modal__close">
+				<img
+					class="modal-close__img"
+					src="./assets/img/icons/close.svg"
+					alt=""
+				/>
+			</button>
+			<div class="modal__subscribe">
+				<h3 class="modal__title">Оформить подписку</h3>
+				<div class="modal-select__wrapper">
+					<h4 class="modal-select__title">Тип подписки</h4>
+					<div class="select modal__select">
+						<div class="select__header">8BIT (на 8 месяцев)</div>
+						<div class="select__dropdown">
+							<div class="select__option">8BIT (на 8 месяцев)</div>
+							<div class="select__option">1BIT (на 1 месяц)</div>
+							<div class="select__option">4BIT (на 4 месяца)</div>
+							<div class="select__option">Базовая подписка</div>
+						</div>
+						<input class="select__input" type="text" />
+					</div>
+				</div>
+				<div class="modal__price">22 800 ₽</div>
+				<div class="modal-button__wrapper">
+					<button class="button button--primary modal__button">Оплатить</button>
+				</div>
+				<p class="modal__text">
+					Ориентировочная стоимость с учетом текущего курса рубля точная
+					стоимость <span>300 USDT</span> за подписку на восемь месяцев
+				</p>
+			</div>
+			<div class="modal__we-accept">
+				<h3 class="modal-we-accept__title">Мы принимаем</h3>
+				<div class="modal-we-accept__list">
+					<a class="modal-we-accept__item" href="#">
+						<img
+							class="modal-we-accept__img"
+							src="./assets/img/icons/usdt.png"
+							alt="usdt"
+						/>
+					</a>
+					<a class="modal-we-accept__item" href="#">
+						<img
+							class="modal-we-accept__img"
+							src="./assets/img/icons/eth.png"
+							alt="eth"
+						/>
+					</a>
+					<a class="modal-we-accept__item" href="#">
+						<img
+							class="modal-we-accept__img"
+							src="./assets/img/icons/btc.png"
+							alt="btc"
+						/>
+					</a>
+					<a class="modal-we-accept__item" href="#">
+						<img
+							class="modal-we-accept__img"
+							src="./assets/img/icons/ltc.png"
+							alt="ltc"
+						/>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="burger-menu">
+			<button class="burger burger-menu__close">
+				<img
+					class="burger-menu__close-img"
+					src="./assets/img/icons/menu-close.svg"
+					alt=""
+				/>
+			</button>
+			<div class="burger-menu__user">
+				<img
+					class="burger-menu__avatar"
+					src="./assets/img/icons/avatar.png"
+					alt=""
+				/>
+				<div class="burger-menu__login">My-super-login</div>
+			</div>
+			<div class="burger-menu__nav">
+				<a class="burger-menu__link" href="#">Преимущества</a>
+				<a class="burger-menu__link" href="#">Подписка</a>
+				<a class="burger-menu__link" href="#">Peer-To-Peer сканер</a>
+				<a class="burger-menu__link" href="#">Подобрать курс</a>
+				<a class="burger-menu__link" href="#">Разработчикам</a>
+			</div>
+			<button class="button menu__button">
+				<span>Регистрация</span>
+				<svg
+					class="menu-button__icon"
+					fill="none"
+					viewBox="0
+          0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="m20 21c0-2.7614-3.5817-5-8-5-4.4183 0-8 2.2386-8
+            5m8-8c-2.7614 0-5-2.2386-5-5 0-2.7614 2.2386-5 5-5 2.7614 0 5
+            2.2386 5 5 0 2.7614-2.2386 5-5 5z"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+					/>
+				</svg>
+			</button>
+		</div>
+
+		<nav class="menu">
+			<div class="container menu__container">
+				<a class="menu__logo" href="#">
+					<img
+						class="menu-logo__img"
+						src="./assets/img/icons/logo.svg"
+						alt="Art
+            Bit"
+					/>
+				</a>
+				<div class="menu__nav">
+					<a class="menu__link" href="#">Преимущества</a>
+					<a class="menu__link" href="#">Подписка</a>
+					<a class="menu__link" href="#">Peer-To-Peer сканер</a>
+					<a class="menu__link" href="#">Подобрать курс</a>
+					<a class="menu__link" href="#">Разработчикам</a>
+				</div>
+				<button class="button menu__button">
+					<span>Регистрация</span>
+					<svg
+						class="menu-button__icon"
+						fill="none"
+						viewBox="0
+            0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="m20 21c0-2.7614-3.5817-5-8-5-4.4183 0-8 2.2386-8
+              5m8-8c-2.7614 0-5-2.2386-5-5 0-2.7614 2.2386-5 5-5 2.7614 0 5
+              2.2386 5 5 0 2.7614-2.2386 5-5 5z"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+						/>
+					</svg>
+				</button>
+				<button class="burger burger-menu__open">
+					<img
+						class="burger-menu__open-img"
+						src="./assets/img/icons/menu-open.svg"
+						alt=""
+					/>
+				</button>
+			</div>
+		</nav>
+
+		<section class="account">
+			<div class="container account__container">
+				<div class="account__user">
+					<img
+						class="account-user__icon"
+						src="./assets/img/icons/avatar.png"
+						alt=""
+					/>
+					<div class="account-user__content">
+						<div class="account-user__login">My-super-login</div>
+						<p class="account-user__date">от 01.01.2023</p>
+					</div>
+				</div>
+
+				<div class="account__subscriptions">
+					<div class="account-subscriptions__active">
+						<h3 class="account-subscriptions__title">Активные подписки</h3>
+						<div class="account-subscriptions__list">
+							<div class="account-subscriptions__item">НЕТ</div>
+						</div>
+					</div>
+					<div class="account-subscriptions__time">
+						<p>От 01.01.2023</p>
+						<p>Истекла 02.01.2024</p>
+					</div>
+					<p class="account-subscriptions__desc">
+						Вы не подписаны, самое время <a href="#">активировать подписку</a>
+					</p>
+				</div>
+
+				<form class="account__new-password" action="#">
+					<p class="account__text">Задать новый пароль</p>
+					<div class="account__form">
+						<input
+							class="field account__field"
+							type="password"
+							placeholder="Старый пароль"
+						/>
+						<input
+							class="field account__field"
+							type="password"
+							placeholder="Новый пароль"
+						/>
+						<input
+							class="field account__field"
+							type="password"
+							placeholder="Новый пароль еще раз"
+						/>
+						<div class="account__button-wrapper">
+							<button class="button button--primary account__button">
+								Сохранить
+							</button>
+							<div class="account__alert">
+								<span>Сохранено</span>
+								<img
+									class="account-alert__img"
+									src="./assets/img/icons/check.svg"
+									alt="Сохранено"
+								/>
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<div class="account__messengers">
+					<h3 class="account-messengers__title">Мои мессенджеры</h3>
+					<div class="account-messengers__content">
+						<div class="account-messengers__list">
+							<div class="account-messengers__item">
+								<div class="account-messengers__body">
+									<img
+										class="account-messengers__icon"
+										src="./assets/img/icons/telegram-2.png"
+										alt="Telegram"
+									/>
+									<h3 class="account-messengers__item-title">Telegram</h3>
+								</div>
+								<button class="account-messengers__delete">
+									<img src="./assets/img/icons/cross.svg" alt="Delete" />
+									<span>Удалить</span>
+								</button>
+							</div>
+						</div>
+						<button class="account-messengers__add">+</button>
+					</div>
+				</div>
+
+				<button class="account__logout">
+					<img
+						class="account-logout__img"
+						src="./assets/img/icons/logout.svg"
+						alt="Logout"
+					/>
+					<span>Выйти из аккаунта</span>
+				</button>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<a class="footer__logo" href="#">
+					<img
+						class="footer-logo__img"
+						src="./assets/img/icons/logo.svg"
+						alt="Art Bit"
+					/>
+				</a>
+				<div class="footer__nav">
+					<a class="footer__link" href="#">Преимущества</a>
+					<a class="footer__link" href="#">Peer-to-peer сканер</a>
+					<a class="footer__link" href="#">Найти лучший курс обмена</a>
+					<a class="footer__link" href="#">Войти / Регистрация</a>
+					<a class="footer__link" href="#">Поддержка</a>
+					<a class="footer__link" href="#">Подписка на сервис</a>
+					<a class="footer__link" href="#">Отзывы</a>
+					<a class="footer__link" href="#">Разработчикам</a>
+				</div>
+				<div class="footer__countries">
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/russia.png"
+							alt="Russia"
+						/>
+					</a>
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/united-kingdom.png"
+							alt="United Kingdom"
+						/>
+					</a>
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/turkey.png"
+							alt="Turkey"
+						/>
+					</a>
+				</div>
+				<div class="footer__socials">
+					<a class="footer__social" href="#"></a>
+					<a class="footer__social" href="#">
+						<img
+							class="footer-social__img"
+							src="./assets/img/icons/telegram.png"
+							alt="Telegram"
+						/>
+					</a>
+					<a class="footer__social" href="#">
+						<img
+							class="footer-social__img"
+							src="./assets/img/icons/github.png"
+							alt="Git hub"
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+    <script src="./js/select.js"></script>
+	</body>
+</html>

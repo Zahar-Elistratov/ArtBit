@@ -1,0 +1,132 @@
+.button {
+	padding: 26px 30px;
+
+	font-family: 'Montserrat';
+	font-weight: 400;
+
+	font-size: 20px;
+	line-height: 1.2em;
+
+	text-transform: uppercase;
+
+	position: relative;
+
+	border: 2px solid #63e2b7;
+	color: #63e2b7;
+	background: transparent;
+
+	cursor: pointer;
+	transition: color 0.3s ease, border 0.3s ease;
+}
+
+.button:hover {
+	color: #ffffff;
+	border: 2px solid #ffffff;
+}
+
+.button:active {
+	color: #313131;
+	border: 2px solid #313131;
+}
+
+@media (max-width: 820px) {
+	.button {
+		font-size: 18px;
+	}
+}
+
+.button.button--primary {
+	padding: 26px 48px;
+
+	font-weight: 600;
+
+	text-transform: none;
+
+	border: 0;
+}
+
+.button.button--primary:hover {
+	color: #63e2b7;
+}
+
+.button.button--primary:active {
+	color: #9b9b9b;
+}
+
+.button.button--primary::before {
+	content: '';
+
+	height: 100%;
+	width: 55px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+
+	border-top: 2px solid #63e2b7;
+	border-left: 2px solid #63e2b7;
+	border-bottom: 2px solid #63e2b7;
+
+	transition: border 0.3s ease, width 0.3s ease;
+}
+
+.button.button--primary:hover::before {
+	width: 50%;
+
+	border-top: 2px solid #63e2b7;
+	border-left: 2px solid #63e2b7;
+	border-bottom: 2px solid #63e2b7;
+}
+
+.button.button--primary:active::before {
+	border-top: 2px solid #9b9b9b;
+	border-left: 2px solid #9b9b9b;
+	border-bottom: 2px solid #9b9b9b;
+}
+
+.button.button--primary::after {
+	content: '';
+
+	height: 100%;
+	width: 55px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	border-top: 2px solid #63e2b7;
+	border-right: 2px solid #63e2b7;
+	border-bottom: 2px solid #63e2b7;
+
+	transition: border 0.3s ease, width 0.3s ease;
+}
+
+.button.button--primary:hover::after {
+	width: 50%;
+
+	border-top: 2px solid #63e2b7;
+	border-right: 2px solid #63e2b7;
+	border-bottom: 2px solid #63e2b7;
+}
+
+.button.button--primary:active::after {
+	border-top: 2px solid #9b9b9b;
+	border-right: 2px solid #9b9b9b;
+	border-bottom: 2px solid #9b9b9b;
+}
+
+@media (max-width: 820px) {
+	.button.button--primary {
+		padding: 18px 30px;
+	}
+
+	.button.button--primary::before {
+		width: 40px;
+	}
+
+	.button.button--primary::after {
+		width: 40px;
+	}
+}

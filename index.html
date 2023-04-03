@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/app.css" />
+		<title>Art Bit</title>
+	</head>
+	<body>
+		<div class="modal">
+			<button class="modal__close">
+				<img
+					class="modal-close__img"
+					src="./assets/img/icons/close.svg"
+					alt=""
+				/>
+			</button>
+			<div class="modal__type">
+				<a class="modal__link modal__link--active" href="#">Вход</a>
+				<a class="modal__link" href="#">Регистрация</a>
+			</div>
+			<form class="modal__form">
+				<input class="field modal__field" type="text" placeholder="Login" />
+				<input
+					class="field modal__field"
+					type="password"
+					placeholder="Password"
+				/>
+				<button class="button button--primary modal__button">Войти</button>
+				<a class="modal__forgot-password" href="#">Забыли пароль?</a>
+			</form>
+			<div class="modal__login-with">
+				<h3 class="modal-login-with__title">Войти с помощью</h3>
+				<div class="modal-login-with__list">
+					<a class="modal-login-with__item" href="#">
+						<img
+							class="modal-login-with__img"
+							src="./assets/img/icons/telegram-2.png"
+							alt="telegram"
+						/>
+					</a>
+					<a class="modal-login-with__item" href="#">
+						<img
+							class="modal-login-with__img"
+							src="./assets/img/icons/metamask.png"
+							alt="metamask"
+						/>
+					</a>
+					<a class="modal-login-with__item" href="#">
+						<img
+							class="modal-login-with__img"
+							src="./assets/img/icons/github.png"
+							alt="github"
+						/>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="burger-menu">
+			<button class="burger burger-menu__close">
+				<img
+					class="burger-menu__close-img"
+					src="./assets/img/icons/menu-close.svg"
+					alt=""
+				/>
+			</button>
+			<div class="burger-menu__user">
+				<img
+					class="burger-menu__avatar"
+					src="./assets/img/icons/avatar.png"
+					alt=""
+				/>
+				<div class="burger-menu__login">My-super-login</div>
+			</div>
+			<div class="burger-menu__nav">
+				<a class="burger-menu__link" href="#">Преимущества</a>
+				<a class="burger-menu__link" href="#">Подписка</a>
+				<a class="burger-menu__link" href="#">Peer-To-Peer сканер</a>
+				<a class="burger-menu__link" href="#">Подобрать курс</a>
+				<a class="burger-menu__link" href="#">Разработчикам</a>
+			</div>
+			<button class="button menu__button">
+				<span>Регистрация</span>
+				<svg
+					class="menu-button__icon"
+					fill="none"
+					viewBox="0
+        0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="m20 21c0-2.7614-3.5817-5-8-5-4.4183 0-8 2.2386-8
+          5m8-8c-2.7614 0-5-2.2386-5-5 0-2.7614 2.2386-5 5-5 2.7614 0 5
+          2.2386 5 5 0 2.7614-2.2386 5-5 5z"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+					/>
+				</svg>
+			</button>
+		</div>
+
+		<header class="header">
+			<nav class="menu">
+				<div class="container menu__container">
+					<a class="menu__logo" href="#">
+						<img
+							class="menu-logo__img"
+							src="./assets/img/icons/logo.svg"
+							alt="Art
+            Bit"
+						/>
+					</a>
+					<div class="menu__nav">
+						<a class="menu__link" href="#">Преимущества</a>
+						<a class="menu__link" href="#">Подписка</a>
+						<a class="menu__link" href="#">Peer-To-Peer сканер</a>
+						<a class="menu__link" href="#">Подобрать курс</a>
+						<a class="menu__link" href="#">Разработчикам</a>
+					</div>
+					<button class="button menu__button">
+						<span>Регистрация</span>
+						<svg
+							class="menu-button__icon"
+							fill="none"
+							viewBox="0
+            0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="m20 21c0-2.7614-3.5817-5-8-5-4.4183 0-8 2.2386-8
+              5m8-8c-2.7614 0-5-2.2386-5-5 0-2.7614 2.2386-5 5-5 2.7614 0 5
+              2.2386 5 5 0 2.7614-2.2386 5-5 5z"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+							/>
+						</svg>
+					</button>
+					<button class="burger burger-menu__open">
+						<img
+							class="burger-menu__open-img"
+							src="./assets/img/icons/menu-open.svg"
+							alt=""
+						/>
+					</button>
+				</div>
+			</nav>
+			<div class="container header__container">
+				<div class="header__offer">
+					<h1 class="header__title">
+						Поиск прибыльных p2p объявлений <span>обмена</span>
+					</h1>
+					<p class="header__text">Крипто и фиат-активов</p>
+					<button class="button button--primary">Попробовать</button>
+				</div>
+				<img
+					class="header__img"
+					src="./assets/img/home/header/img.svg"
+					alt=""
+				/>
+			</div>
+		</header>
+
+		<section class="companies">
+			<div class="container companies__container">
+				<p class="subtitle">01.</p>
+				<h2 class="title companies__title">5 площадок</h2>
+				<div class="companies__list">
+					<div class="companies__item">
+						<div class="companies__inner">
+							<img
+								class="companies__img"
+								src="./assets/img/home/companies/1.png"
+								alt=""
+							/>
+						</div>
+						<h3 class="companies-item__title">Binance</h3>
+					</div>
+					<div class="companies__item">
+						<div class="companies__inner">
+							<img
+								class="companies__img"
+								src="./assets/img/home/companies/2.png"
+								alt=""
+							/>
+						</div>
+						<h3 class="companies-item__title">OKX</h3>
+					</div>
+					<div class="companies__item">
+						<div class="companies__inner">
+							<img
+								class="companies__img"
+								src="./assets/img/home/companies/3.png"
+								alt=""
+							/>
+						</div>
+						<h3 class="companies-item__title">ByBit</h3>
+					</div>
+					<div class="companies__item">
+						<div class="companies__inner">
+							<img
+								class="companies__img"
+								src="./assets/img/home/companies/4.png"
+								alt=""
+							/>
+						</div>
+						<h3 class="companies-item__title">Huobi</h3>
+					</div>
+					<div class="companies__item">
+						<div class="companies__inner">
+							<img
+								class="companies__img"
+								src="./assets/img/home/companies/5.png"
+								alt=""
+							/>
+						</div>
+						<h3 class="companies-item__title">Huobi</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tokens">
+			<div class="container">
+				<p class="subtitle">02.</p>
+				<h2 class="title tokens__title">5 токенов</h2>
+				<div class="tokens__list">
+					<div class="tokens__item">
+						<img
+							class="tokens__img"
+							src="./assets/img/home/tokens/1.png"
+							alt=""
+						/>
+						<h3 class="tokens-item__title">Binance</h3>
+						<a class="tokens__more" href="#">Подробнее</a>
+					</div>
+					<div class="tokens__item">
+						<img
+							class="tokens__img"
+							src="./assets/img/home/tokens/2.png"
+							alt=""
+						/>
+						<h3 class="tokens-item__title">OKX</h3>
+						<a class="tokens__more" href="#">Подробнее</a>
+					</div>
+					<div class="tokens__item">
+						<img
+							class="tokens__img"
+							src="./assets/img/home/tokens/3.png"
+							alt=""
+						/>
+						<h3 class="tokens-item__title">Bybit</h3>
+						<a class="tokens__more" href="#">Подробнее</a>
+					</div>
+					<div class="tokens__item">
+						<img
+							class="tokens__img"
+							src="./assets/img/home/tokens/4.png"
+							alt=""
+						/>
+						<h3 class="tokens-item__title">Bybit</h3>
+						<a class="tokens__more" href="#">Подробнее</a>
+					</div>
+					<div class="tokens__item">
+						<img
+							class="tokens__img"
+							src="./assets/img/home/tokens/5.png"
+							alt=""
+						/>
+						<h3 class="tokens-item__title">Huobi</h3>
+						<a class="tokens__more" href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="tokens-button__wrapper">
+					<button class="button button--primary">Попробовать</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="banks">
+			<div class="container">
+				<p class="subtitle">03.</p>
+				<h2 class="title banks__title">Банки</h2>
+				<div class="swiper banks__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide banks__item">
+							<img
+								class="banks__img"
+								src="./assets/img/home/banks/1.png"
+								alt=""
+							/>
+							<h3 class="banks-item__title">Сбербанк</h3>
+						</div>
+						<div class="swiper-slide banks__item">
+							<img
+								class="banks__img"
+								src="./assets/img/home/banks/2.png"
+								alt=""
+							/>
+							<h3 class="banks-item__title">Тинькофф</h3>
+						</div>
+						<div class="swiper-slide banks__item">
+							<img
+								class="banks__img"
+								src="./assets/img/home/banks/3.png"
+								alt=""
+							/>
+							<h3 class="banks-item__title">QIWI</h3>
+						</div>
+						<div class="swiper-slide banks__item">
+							<img
+								class="banks__img"
+								src="./assets/img/home/banks/4.png"
+								alt=""
+							/>
+							<h3 class="banks-item__title">Райфайзен</h3>
+						</div>
+						<div class="swiper-slide banks__item">
+							<img
+								class="banks__img"
+								src="./assets/img/home/banks/5.png"
+								alt=""
+							/>
+							<h3 class="banks-item__title">Альфа</h3>
+						</div>
+						<div class="swiper-slide banks__item">
+							<img
+								class="banks__img"
+								src="./assets/img/home/banks/5.png"
+								alt=""
+							/>
+							<h3 class="banks-item__title">Альфа</h3>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<p class="banks__desc">более 30 банков</p>
+			</div>
+		</section>
+
+		<section class="work">
+			<div class="container work__container">
+				<p class="subtitle">04.</p>
+				<h2 class="title work__title">Работа</h2>
+				<div class="work__content">
+					<div class="work__offer">
+						<div class="work__desc">
+							<p>
+								Высокая скорость работы<br />и
+								<span>настраиваемые уведомления</span>
+							</p>
+							<br />
+							<p>Быстрая реакция =<br />Высокая доходность торговли</p>
+						</div>
+						<button class="button button--primary work__button">
+							Попробовать
+						</button>
+					</div>
+					<img class="work__img" src="./assets/img/home/work/img.png" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<section class="recommended-for">
+			<div class="container">
+				<p class="subtitle">05.</p>
+				<h2 class="title recommended-for__title">Кому подойдет</h2>
+				<div class="recommended-for__body">
+					<div class="recommended-for__item recommended-for__item--1">
+						<h3 class="recommended-for__item-title">Professional</h3>
+						<div class="recommended-for__inner">
+							<div class="recommended-for__background">
+								<picture>
+									<source
+										srcset="./assets/img/home/recommended-for/card-1-small.svg"
+										media="(max-width: 820px)"
+									/>
+									<source
+										srcset="./assets/img/home/recommended-for/card-1-medium.svg"
+										media="(max-width: 1239px)"
+									/>
+									<img
+										src="./assets/img/home/recommended-for/card-1.svg"
+										alt=""
+									/>
+								</picture>
+							</div>
+							<div class="recommended-for__group recommended-for__group--1">
+								<img
+									class="recommended-for__img"
+									src="./assets/img/home/recommended-for/1.svg"
+									alt=""
+								/>
+								<h4 class="recommended-for__item-title">Профессионалам</h4>
+							</div>
+							<p class="recommended-for__desc">
+								Особые условия тем, кто занимается арбитражом профессионально
+							</p>
+							<div class="recommended-for__group recommended-for__group--2">
+								<ul class="recommended-for__list">
+									<li>Все комбинации стратегий</li>
+									<li>
+										Фильтры для максимально точного определения среднего курса
+										для целевых валютных пар
+									</li>
+								</ul>
+								<ul class="recommended-for__list">
+									<li>Продвинутая аналитика предложений</li>
+									<li>
+										Уведомления - настройте порог волатильности, начиная от
+										которого вы готовы совершать сделку
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="recommended-for__item recommended-for__item--2">
+						<h3 class="recommended-for__item-title">Enthusiast</h3>
+						<div class="recommended-for__inner">
+							<div class="recommended-for__background">
+								<picture>
+									<source
+										srcset="./assets/img/home/recommended-for/card-2-small.svg"
+										media="(max-width: 820px)"
+									/>
+									<source
+										srcset="./assets/img/home/recommended-for/card-2-medium.svg"
+										media="(max-width: 1239px)"
+									/>
+									<img
+										src="./assets/img/home/recommended-for/card-2.svg"
+										alt=""
+									/>
+								</picture>
+							</div>
+							<div class="recommended-for__group recommended-for__group--1">
+								<img
+									class="recommended-for__img"
+									src="./assets/img/home/recommended-for/2.svg"
+									alt=""
+								/>
+								<h4 class="recommended-for__item-title">Энтузиастам</h4>
+							</div>
+							<p class="recommended-for__desc">
+								Простой способ получить лучшее предложение обмена токен или фиат
+								- активов
+							</p>
+							<div class="recommended-for__group recommended-for__group--2">
+								<ul class="recommended-for__list">
+									<li>Лучшее предложене</li>
+									<li>1 USDT => 76 рублей Тиньков на OKX</li>
+								</ul>
+								<ul class="recommended-for__list">
+									<li>Обновлено 15 секунд назад</li>
+									<li>Задать свои параметры</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="triggers">
+			<div class="container">
+				<p class="subtitle triggers__subtitle">06.</p>
+				<h2 class="title triggers__title">Преимущества</h2>
+				<div class="triggers__list">
+					<div class="triggers__item">
+						<h3 class="triggers-item__title">Скорость</h3>
+						<p class="triggers__text">
+							Ежемоментно сканер обрабатывает множество комбинайций предложений
+							обмена крипто и фаиат-активов на пяти площадках для 6 видов
+							токенов и более чем 30 банков.
+						</p>
+						<a class="triggers__more" href="#">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M3 12.0176H21M21 12.0176L16 7.01758M21 12.0176L16 17.0176"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+					<div class="triggers__item">
+						<h3 class="triggers-item__title">Релевантность</h3>
+						<p class="triggers__text">
+							Тонкие фильтры помогут получать наиболее подходящие предложения
+							обмена - установите список банков, площадок, тип активов и
+							критерии качества мерчантов
+						</p>
+						<a class="triggers__more" href="#">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M3 12.0176H21M21 12.0176L16 7.01758M21 12.0176L16 17.0176"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+					<div class="triggers__item">
+						<h3 class="triggers-item__title">уведомления</h3>
+						<p class="triggers__text">
+							Не нужно постоянно мониторить изменения курсов - установите
+							желаемый порог маржинальности и получайте уведомление сразу, как
+							будет найдена подходящая связка
+						</p>
+						<a class="triggers__more" href="#">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M3 12.0176H21M21 12.0176L16 7.01758M21 12.0176L16 17.0176"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+					<div class="triggers__item">
+						<h3 class="triggers-item__title">Стоимость</h3>
+						<p class="triggers__text">
+							Базовые вомзожности p2p-сканера доступны бесплатно - достаточно
+							только заргистрироваться. И, если вас устроит фунциональность, вы
+							всегда можете попробовать платную подписку или продолжить
+							пользоваться сканеро бсплатно. Функционал - вы
+						</p>
+						<a class="triggers__more" href="#">
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M3 12.0176H21M21 12.0176L16 7.01758M21 12.0176L16 17.0176"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="video">
+			<div class="container video__container">
+				<img
+					class="video__img"
+					src="./assets/img/home/video/background.png"
+					alt=""
+				/>
+				<div class="video__offer">
+					<button class="button button--primary video__button">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5 17.3333V6.66663C5 5.78706 5 5.34728 5.18509 5.08704C5.34664 4.8599 5.59564 4.71053 5.87207 4.67487C6.1885 4.63406 6.57572 4.84058 7.35036 5.25372L7.35254 5.25488L17.3525 10.5882C18.212 11.0466 18.6418 11.2758 18.7826 11.581C18.9053 11.8469 18.9053 12.1531 18.7826 12.4189C18.6418 12.7241 18.212 12.9534 17.3525 13.4117L7.35254 18.7451L7.34978 18.7465C6.57553 19.1595 6.18842 19.3659 5.87207 19.3251C5.59564 19.2895 5.34664 19.1401 5.18509 18.913C5 18.6527 5 18.2129 5 17.3333Z"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</button>
+					<p class="video__desc">Название видео, небольшое, краткое описание</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="subscribe">
+			<div class="container">
+				<p class="subtitle">07.</p>
+				<h2 class="title subscribe__title">Подписка</h2>
+				<div class="swiper subscribe__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide subscribe__item">
+							<div class="subscribe__inner">
+								<h3 class="subscribe-item__title">Базовая подписка</h3>
+								<div class="subscribe__price">$0</div>
+								<p class="subscribe__time">навсегда</p>
+								<p class="subscribe__text">
+									Бесплатный доступ к p2p сканеру с ограничениями в частоте
+									обновления и без уведомлений
+								</p>
+								<button class="button button--primary subscribe__button">
+									Начать работу
+								</button>
+							</div>
+							<div class="subscribe__desc">
+								<p>
+									Подойдет для тех, кто хочет познакомится с функционалом
+									сканера
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide subscribe__item">
+							<div class="subscribe__inner">
+								<h3 class="subscribe-item__title">1BIT</h3>
+								<div class="subscribe__price">$50</div>
+								<p class="subscribe__time">на месяц</p>
+								<p class="subscribe__text">
+									Полный доступ к p2p-сканеру <span>без ограничений</span>
+								</p>
+								<button class="button button--primary subscribe__button">
+									Заказать
+								</button>
+							</div>
+							<div class="subscribe__desc">
+								<p>Основной тариф для профессиональных p2p-трейдеров</p>
+							</div>
+						</div>
+						<div class="swiper-slide subscribe__item">
+							<div class="subscribe__inner">
+								<h3 class="subscribe-item__title">4BIT</h3>
+								<div class="subscribe__price">$170</div>
+								<p class="subscribe__time">на четыре месяца</p>
+								<p class="subscribe__text">
+									Полный доступ к p2p-сканеру без ограничений и на
+									<span>Скидка 15%</span>
+								</p>
+								<button class="button button--primary subscribe__button">
+									Заказать
+								</button>
+							</div>
+							<div class="subscribe__desc">
+								<p>
+									Основной тариф для профессиональных p2p-трейдеров с 15%
+									скидкой
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide subscribe__item">
+							<div class="subscribe__inner">
+								<h3 class="subscribe-item__title">8BIT</h3>
+								<div class="subscribe__price">$300</div>
+								<p class="subscribe__time">на восемь месяцев</p>
+								<p class="subscribe__text">
+									Полный доступ к p2p-сканеру без ограничений со скидкой 25%
+								</p>
+								<button class="button button--primary subscribe__button">
+									Заказать
+								</button>
+							</div>
+							<div class="subscribe__desc">
+								<p>
+									Самый выгодный тариф для профессиональных p2p-трейдеров с 25%
+									скидкой
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="testimonials">
+			<div class="container">
+				<p class="subtitle">08.</p>
+				<h2 class="title testimonial__title">Отзывы</h2>
+				<div class="swiper testimonial__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide testimonial__item">
+							<div class="testimonial__inner">
+								<img
+									class="testimonial__avatar"
+									src="./assets/img/home/testimonials/1.png"
+									alt=""
+								/>
+								<h3 class="testimonial__name">Имя Отчество</h3>
+							</div>
+							<div class="testimonial__stars">
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+							</div>
+							<p class="testimonial__text">
+								Ставлю 4 из 5, просто потому, что я гнилой человек. Но очень
+								круто, спасибо
+							</p>
+						</div>
+						<div class="swiper-slide testimonial__item">
+							<div class="testimonial__inner">
+								<img
+									class="testimonial__avatar"
+									src="./assets/img/home/testimonials/2.png"
+									alt=""
+								/>
+								<h3 class="testimonial__name">Имя Отчество</h3>
+							</div>
+							<div class="testimonial__stars">
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+							</div>
+							<p class="testimonial__text">
+								Ставлю 4 из 5, просто потому, что я гнилой человек. Но очень
+								круто, спасибо
+							</p>
+						</div>
+						<div class="swiper-slide testimonial__item">
+							<div class="testimonial__inner">
+								<img
+									class="testimonial__avatar"
+									src="./assets/img/home/testimonials/3.png"
+									alt=""
+								/>
+								<h3 class="testimonial__name">Имя Отчество</h3>
+							</div>
+							<div class="testimonial__stars">
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+							</div>
+							<p class="testimonial__text">
+								Ставлю 4 из 5, просто потому, что я гнилой человек. Но очень
+								круто, спасибо
+							</p>
+						</div>
+						<div class="swiper-slide testimonial__item">
+							<div class="testimonial__inner">
+								<img
+									class="testimonial__avatar"
+									src="./assets/img/home/testimonials/3.png"
+									alt=""
+								/>
+								<h3 class="testimonial__name">Имя Отчество</h3>
+							</div>
+							<div class="testimonial__stars">
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star-active.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+								<img
+									class="testimonial__star"
+									src="./assets/img/icons/star.svg"
+									alt=""
+								/>
+							</div>
+							<p class="testimonial__text">
+								Ставлю 4 из 5, просто потому, что я гнилой человек. Но очень
+								круто, спасибо
+							</p>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="for-developers">
+			<div class="container">
+				<p class="subtitle">09.</p>
+				<h2 class="title for-developers__title">Разработчикам</h2>
+				<p class="for-developers__text">
+					Воспользуйтесь нашим API для поиска лучшего предложения обмена фиат
+					или крипто-активов на разных торговых площадках. Или настройте
+					уведомления, чтобы не пропустить лучшие условия сделки<br />Описание
+					API и исходные коды доступны в нашем репозитории на
+					<a href="#">github</a>
+				</p>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<a class="footer__logo" href="#">
+					<img
+						class="footer-logo__img"
+						src="./assets/img/icons/logo.svg"
+						alt="Art Bit"
+					/>
+				</a>
+				<div class="footer__nav">
+					<a class="footer__link" href="#">Преимущества</a>
+					<a class="footer__link" href="#">Peer-to-peer сканер</a>
+					<a class="footer__link" href="#">Найти лучший курс обмена</a>
+					<a class="footer__link" href="#">Войти / Регистрация</a>
+					<a class="footer__link" href="#">Поддержка</a>
+					<a class="footer__link" href="#">Подписка на сервис</a>
+					<a class="footer__link" href="#">Отзывы</a>
+					<a class="footer__link" href="#">Разработчикам</a>
+				</div>
+				<div class="footer__countries">
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/russia.png"
+							alt="Russia"
+						/>
+					</a>
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/united-kingdom.png"
+							alt="United Kingdom"
+						/>
+					</a>
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/turkey.png"
+							alt="Turkey"
+						/>
+					</a>
+				</div>
+				<div class="footer__socials">
+					<a class="footer__social" href="#"></a>
+					<a class="footer__social" href="#">
+						<img
+							class="footer-social__img"
+							src="./assets/img/icons/telegram.png"
+							alt="Telegram"
+						/>
+					</a>
+					<a class="footer__social" href="#">
+						<img
+							class="footer-social__img"
+							src="./assets/img/icons/github.png"
+							alt="Git hub"
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
+</html>

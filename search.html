@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/search.css" />
+		<title>Search</title>
+	</head>
+
+	<body>
+		<div class="modal">
+			<button class="modal__close">
+				<img
+					class="modal-close__img"
+					src="./assets/img/icons/close.svg"
+					alt=""
+				/>
+			</button>
+			<div class="modal__logo">
+				<img
+					class="modal-logo__img"
+					src="./assets/img/icons/binance-2.png"
+					alt=""
+				/>
+				<div class="modal-logo__text">Binance</div>
+			</div>
+			<div class="modal__list">
+				<div class="modal__item">
+					<div class="modal-item__number">1</div>
+					<p class="modal-item__text">
+						<span class="price">70.60</span> рублей,
+						<span class="bank">Тинькофф</span>
+					</p>
+				</div>
+				<div class="modal__item">
+					<div class="modal-item__number">2</div>
+					<p class="modal-item__text">
+						<span class="price">70.20</span> рублей,
+						<span class="bank">Тинькофф</span>
+					</p>
+				</div>
+				<div class="modal__item">
+					<div class="modal-item__number">3</div>
+					<p class="modal-item__text">
+						<span class="price">69.80</span> рублей,
+						<span class="bank">Тинькофф</span>
+					</p>
+				</div>
+			</div>
+			<div class="modal__offers">
+				<h3 class="modal-offers__title">Еще предложения на других площадках</h3>
+				<ul class="modal-offers__list">
+					<li class="modal-offers__item">
+						<h4>OKX</h4>
+						<p>75.60 рублей, Тинькофф</p>
+					</li>
+					<li class="modal-offers__item">
+						<h4>HUOBI</h4>
+						<p>74.60 рублей, Тинькофф</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<nav class="menu">
+			<div class="container menu__container">
+				<a class="logo" href="#">
+					<img
+						class="logo__img"
+						src="./assets/img/icons/logo.svg"
+						alt="Art Bit"
+					/>
+				</a>
+				<a class="avatar" href="#">
+					<img
+						class="avatar__img"
+						src="./assets/img/icons/avatar.png"
+						alt="Avatar"
+					/>
+				</a>
+			</div>
+		</nav>
+
+		<section class="search">
+			<div class="container search__container">
+				<h1 class="title search__title">
+					Установи походящие тебе параметры чтобы найти лучшее предложение
+					обмена крипто-активов
+				</h1>
+				<div class="button-group">
+					<button class="button search__button--1">купить</button>
+					<button class="button search__button--2">продать</button>
+				</div>
+				<div class="currency">
+					<div class="select">
+						<div class="select__header">USDT</div>
+						<div class="select__dropdown">
+							<div class="select__option">
+								USDT
+							</div>
+							<div class="select__option">
+								USDT
+							</div>
+							<div class="select__option">
+								USDT
+              </div>
+						</div>
+            <input class="select__input" type="text">
+					</div>
+					<span> за рубли (₽) </span>
+				</div>
+				<div class="search__group">
+					<span>Искать на</span>
+					<div class="multiselect js-multiselect">
+						<div class="multiselect__header js-multiselect__header"></div>
+						<div class="multiselect__dropdown">
+							<label class="multiselect__option">
+								<input
+									type="checkbox"
+									class="multiselect__input js-multiselect__check"
+									value="1"
+									checked
+								/>
+								<span class="multiselect__text js-multiselect__text"
+									>Binance</span
+								>
+							</label>
+							<label class="multiselect__option">
+								<input
+									type="checkbox"
+									class="multiselect__input js-multiselect__check"
+									value="2"
+								/>
+								<span class="multiselect__text js-multiselect__text"
+									>Binance</span
+								>
+							</label>
+							<label class="multiselect__option">
+								<input
+									type="checkbox"
+									class="multiselect__input js-multiselect__check"
+									value="3"
+								/>
+								<span class="multiselect__text js-multiselect__text"
+									>Binance</span
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="search__group">
+					<span>На карту</span>
+					<div class="multiselect js-multiselect">
+						<div class="multiselect__header js-multiselect__header"></div>
+						<div class="multiselect__dropdown">
+							<label class="multiselect__option">
+								<input
+									type="checkbox"
+									class="multiselect__input js-multiselect__check"
+									value="1"
+									checked
+								/>
+								<span class="multiselect__text js-multiselect__text"
+									>Tinkoff</span
+								>
+							</label>
+							<label class="multiselect__option">
+								<input
+									type="checkbox"
+									class="multiselect__input js-multiselect__check"
+									value="2"
+								/>
+								<span class="multiselect__text js-multiselect__text"
+									>Tinkoff</span
+								>
+							</label>
+							<label class="multiselect__option">
+								<input
+									type="checkbox"
+									class="multiselect__input js-multiselect__check"
+									value="3"
+								/>
+								<span class="multiselect__text js-multiselect__text"
+									>Tinkoff</span
+								>
+							</label>
+						</div>
+					</div>
+				</div>
+				<button class="button button--primary search__button">
+					Искать заново
+				</button>
+				<div class="search__result">
+					<p class="search-result__text">
+						<span class="bold">70.6</span> рублей на
+						<span>Binance, Тинькофф</span>
+					</p>
+					<a class="search-result__more" href="#">
+						<img src="./assets/img/icons/more.svg" alt="More" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__nav">
+					<a class="footer__link" href="#">Преимущества</a>
+					<a class="footer__link" href="#">Peer-to-peer сканер</a>
+					<a class="footer__link" href="#">Найти лучший курс обмена</a>
+					<a class="footer__link" href="#">Войти / Регистрация</a>
+					<a class="footer__link" href="#">Поддержка</a>
+					<a class="footer__link" href="#">Подписка на сервис</a>
+					<a class="footer__link" href="#">Отзывы</a>
+					<a class="footer__link" href="#">Разработчикам</a>
+				</div>
+				<div class="footer__countries">
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/russia.png"
+							alt="Russia"
+						/>
+					</a>
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/united-kingdom.png"
+							alt="United Kingdom"
+						/>
+					</a>
+					<a class="footer__country" href="#">
+						<img
+							class="footer-country__img"
+							src="./assets/img/icons/turkey.png"
+							alt="Turkey"
+						/>
+					</a>
+				</div>
+				<div class="footer__socials">
+					<a class="footer__social" href="#"></a>
+					<a class="footer__social" href="#">
+						<img
+							class="footer-social__img"
+							src="./assets/img/icons/telegram.png"
+							alt="Telegram"
+						/>
+					</a>
+					<a class="footer__social" href="#">
+						<img
+							class="footer-social__img"
+							src="./assets/img/icons/github.png"
+							alt="Git hub"
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/select.js"></script>
+		<script src="./js/search.js"></script>
+	</body>
+</html>

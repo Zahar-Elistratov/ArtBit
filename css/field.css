@@ -1,0 +1,25 @@
+.field {
+	padding: 26px 20px;
+
+	font-family: 'Montserrat';
+	font-weight: 400;
+
+	font-size: 20px;
+	line-height: 1.2em;
+
+	border: 2px solid #313131;
+	color: #63e2b7;
+	background: transparent;
+
+	outline: 0;
+}
+
+.field::placeholder {
+	color: #7e7e7e;
+}
+
+@media (max-width: 820px) {
+	.field {
+		font-size: 16px;
+	}
+}

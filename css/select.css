@@ -1,0 +1,174 @@
+.select {
+	position: relative;
+}
+
+.select__header {
+	height: 50px;
+
+	font-weight: 400;
+
+	font-size: 36px;
+	line-height: 1.2em;
+	text-align: left;
+
+	position: relative;
+
+	color: #63e2b7;
+}
+
+.select__header::after {
+	content: '';
+	display: block;
+
+	margin: auto 0;
+
+	height: 9px;
+	width: 18px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	background: url('../assets/img/icons/arrow.svg') no-repeat center / contain;
+}
+
+.select__dropdown {
+	display: none;
+
+	padding: 10px 5px;
+	width: 100%;
+
+	flex-direction: column;
+	gap: 3px;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 3;
+
+	background: #101014;
+}
+
+.select.select--active .select__dropdown {
+	display: flex;
+}
+
+.select__option {
+	font-size: 24px;
+	line-height: 1.2em;
+	text-align: left;
+
+	color: #8f8f8f;
+
+	cursor: pointer;
+}
+
+.select__option:hover {
+	color: #FFFFFF;
+}
+
+.select__input {
+	display: none;
+}
+
+.multiselect {
+	position: relative;
+
+	min-width: 210px;
+	max-width: 490px;
+}
+
+.multiselect__header {
+	padding-right: 30px;
+
+	height: 50px;
+
+	font-weight: 400;
+
+	font-size: 36px;
+	line-height: 1.2em;
+	text-align: left;
+
+	position: relative;
+
+	color: #63e2b7;
+	overflow: hidden;
+}
+
+.multiselect__header::after {
+	content: '';
+	display: block;
+
+	margin: auto 0;
+
+	height: 9px;
+	width: 18px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	background: url('../assets/img/icons/arrow.svg') no-repeat center / contain;
+}
+
+.multiselect__dropdown {
+	display: none;
+
+	padding: 15px 60px;
+	width: 100%;
+
+	flex-direction: column;
+	gap: 12px;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 3;
+
+	background: #1f1f23;
+}
+
+.multiselect.multiselect--active .multiselect__dropdown {
+	display: flex;
+}
+
+.multiselect__option {
+	font-size: 24px;
+	line-height: 1.2em;
+
+	text-align: left;
+
+	color: #8f8f8f;
+
+	cursor: pointer;
+}
+
+.multiselect__input {
+	display: none;
+}
+
+.multiselect__text {
+	position: relative;
+}
+
+.multiselect__input:checked + .multiselect__text {
+	color: #63e2b7;
+}
+
+.multiselect__input:checked + .multiselect__text::before {
+	content: '';
+
+	margin: auto 0;
+
+	height: 24px;
+	width: 24px;
+
+	position: absolute;
+	top: 0;
+	left: -34px;
+	bottom: 0;
+
+	background: url('../assets/img/icons/check-2.svg') no-repeat center / contain;
+}
